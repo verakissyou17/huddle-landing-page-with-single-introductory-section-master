@@ -90,6 +90,7 @@ main section button:hover {
   padding: 1em;
   margin-left: .5em;
   border-radius: 50%;
+  color: var(--White);
   border: 1px solid var(--White);
 }
 
