@@ -41,7 +41,7 @@ h1 {
 }
 
 .header__logo {
-  width: clamp(100px, 150px, 200px);
+  width: clamp(100px, 200px, 300px);
 }
 
 .wrapper {
@@ -119,6 +119,7 @@ main section button:hover {
   }
 
   .wrapper {
+    margin: 2.5em;
     margin-bottom: 0;
   }
 
