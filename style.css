@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+  --White: hsl(0, 0%, 100%);
+}
+
+*, 
+*::after, 
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Violet);
+  background-image: url('./images/bg-mobile.svg');
+  background-repeat: no-repeat;  
+  background-size: contain;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+img, 
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.header__logo {
+  width: clamp(100px, 20vw, 400px);
+}
+
+.wrapper {
+  margin: 2em;
+}
+
+.main__image--container {
+  margin: 3.8em 0;
+}
+
+.main__section {
+  color: var(--White);
+  padding: .2em;
+  text-align: center; 
+  font-family: inherit;
+}
+
+.main__section p {
+  line-height: 1.5;
+  opacity: .9;
+  margin-bottom: 1.5em;
+}
+
+.main__section button {
+  border: 3px solid hsl(257, 47%, 43%);
+  cursor:pointer;
+  margin-bottom: 1.5em;
+  padding: .6em 6em;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 20px;
+  color: var(--Violet);
+  background-color: var(--White);
+  box-shadow:  3px 3px 3px hsl(257, 47%, 43%);
+}
+
+main section button:hover {
+  background-color: var(--Soft-Magenta);
+  color: var(--White);
+}
+
+.main__icons {
+  margin-top: 3em;
+}
+
+.fa-brands {
+  padding: 1em;
+  margin-left: .5em;
+  border-radius: 50%;
+  border: 1px solid var(--White);
+}
+
+.fa-brands:hover {
+  color: var(--Soft-Magenta);
+  border-color: var(--Soft-Magenta);
+}
+
+.attribution { 
+  margin-top: 2em;
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: var(--White); 
+}
+.attribution a:hover {
+  color: var(--Soft-Magenta);
+}
+
+
+@media (width > 768px) {
+  body {
+    background-image: url('./images/bg-desktop.svg');
+    background-position: left -2.5vw center;
+  }
+
+  .wrapper {
+    margin: 2.5em;
+    margin-bottom: 0;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .main__image--container {
+    width: 58%;
+  }
+
+  .main__section {
+    width: 37%;
+    align-self: flex-end;
+    text-align: left;
+  }
+
+  .main__icons {
+   text-align: right;
+   margin-top: 10em;
+  }
+
+}
