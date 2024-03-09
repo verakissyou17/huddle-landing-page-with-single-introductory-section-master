@@ -130,11 +130,11 @@ main section button:hover {
   }
 
   .main__image--container {
-    width: 57%;
+    width: 59%;
   }
 
   .main__section {
-    width: 36%;
+    width: 37%;
     align-self: flex-end;
     text-align: left;
   }
