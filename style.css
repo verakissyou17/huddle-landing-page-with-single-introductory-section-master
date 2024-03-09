@@ -116,7 +116,6 @@ main section button:hover {
 @media (width > 768px) {
   body {
     background-image: url('./images/bg-desktop.svg');
-    background-position: left -2.5vw center;
   }
 
   .wrapper {
